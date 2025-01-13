@@ -80,7 +80,7 @@ for date in dates:  # freq='B' 保證是開盤日
     
     results_df = pd.concat([results_df, pd.DataFrame([row])], ignore_index=True)
     total_days -= 1
-    print(f'Completed date: {date}| Ramaining days: {total_days}')
+    print(f'Completed date: {date} | Ramaining days: {total_days}')
 
 outputpath = f'{start_date}_market_breadth_analysis.csv'
 results_df.to_csv(f'{outputpath}', index=False)
